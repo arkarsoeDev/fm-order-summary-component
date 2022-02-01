@@ -13,9 +13,11 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: darkblue;
+    background: $paleBlue;
+    font-size: 16px;
+    font-family: $redHat;
 }
 
-h1{
-    color: $white;
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
 }

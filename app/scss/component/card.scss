@@ -1,0 +1,63 @@
+@use "../util/" as *;
+
+.card {
+  background-color: $white;
+  max-width: rem(280);
+  border-radius: rem(15);
+  overflow: hidden;
+
+  @include breakpoint(medium) {
+    max-width: rem(320);
+  }
+
+  &__hero {
+    max-width: inherit;
+    display: block;
+  }
+
+  &__body {
+    padding: rem(20);
+    text-align: center;
+
+    @include breakpoint(medium) {
+      padding: rem(30);
+    }
+  }
+
+  &__title {
+    color: $dark;
+    margin: 0;
+    font-size: 20px;
+    font-weight: $fw-medium;
+    margin-bottom: rem(20);
+  }
+
+  &__description {
+    color: $desaturatedBlue;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: rem(20);
+  }
+
+  &__price-plan {
+    margin-bottom: rem(20);
+  }
+
+  &__proceed {
+    width: 100%;
+    box-shadow: 1px 12px 10px 2px rgb(108 97 196 / 33%);
+    margin-bottom: rem(12);
+  }
+
+  &__cancel {
+    color: $desaturatedBlue;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: $fw-bold;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: $darkBlue;
+    }
+  }
+}

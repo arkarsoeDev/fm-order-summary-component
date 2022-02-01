@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch app/scss/main.scss:dist/css/main.css",
-    "minicss": "sass dist/css/style.css:dist/css/style.min.css --style compressed"
+    "minicss": "sass dist/css/main.css:dist/css/main.min.css --style compressed"
   },
   "keywords": [],
   "author": "",

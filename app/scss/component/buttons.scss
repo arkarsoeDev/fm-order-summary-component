@@ -1,0 +1,20 @@
+@use "../util/" as *;
+
+.button {
+  color: $white;
+  width: auto;
+  display: inline-block;
+  background-color: $brightBlue;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: $fw-medium;
+  letter-spacing: 1.2px;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
